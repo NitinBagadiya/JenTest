@@ -1,0 +1,10 @@
+pipeline{
+	agent{
+		docker{	image 'alpine'}
+	}
+	stages{
+		stage('Test'){
+			sh 'ls'
+		}
+	}
+}	
